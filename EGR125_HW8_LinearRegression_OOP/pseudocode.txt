@@ -1,0 +1,82 @@
+START
+
+Create a class called LinearRegression
+
+Inside the class:
+    Create a vector to store X values
+    Create a vector to store Y values
+    Create variables for slope, intercept, and number of values
+
+Function populateVectors(filename):
+    Open the file
+    If the file does not open:
+        Display an error message
+        Stop the function
+
+    Read and skip the X label
+    Read the X values into the X vector
+
+    Clear the file fail state
+
+    Read and skip the Y label
+    Read the Y values into the Y vector
+
+    Close the file
+
+    If the X or Y vector is empty:
+        Display an error message
+
+    If the X and Y vectors have different sizes:
+        Display an error message
+
+    Store the size of the X vector as n
+
+Function sumVector(values):
+    Set sum to 0
+    For each value in the vector:
+        Add the value to sum
+    Return sum
+
+Function multiplyVectors():
+    Create an empty vector for products
+    For each index in the X vector:
+        Multiply X[index] by Y[index]
+        Store the result in the products vector
+    Return the products vector
+
+Function squareVector(values):
+    Create an empty vector for squares
+    For each value in the vector:
+        Square the value
+        Store the result in the squares vector
+    Return the squares vector
+
+Function calculateSlope():
+    Find the sum of X values
+    Find the sum of Y values
+    Multiply X and Y values, then find the sum
+    Square the X values, then find the sum
+    Use the linear regression slope formula
+    Store the slope
+
+Function calculateIntercept():
+    Find the sum of X values
+    Find the sum of Y values
+    Use the intercept formula
+    Store the intercept
+
+Function displayResults():
+    Display the X values
+    Display the Y values
+    Display the slope
+    Display the y-intercept
+    Display the best-fit line equation
+
+In main:
+    Create a LinearRegression object
+    Call populateVectors using lin_reg.txt
+    Call calculateSlope
+    Call calculateIntercept
+    Call displayResults
+
+END
